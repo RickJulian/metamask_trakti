@@ -1,4 +1,4 @@
-function connectToMetamask() {
+/* async */ function connectToMetamask() {
     /*try {
         accounts = await window.ethereum.enable();
         console.log(accounts);
