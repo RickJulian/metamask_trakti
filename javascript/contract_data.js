@@ -203,5 +203,5 @@ const abi = [
 	}
 	]
     const address = '0x036f76ecc2b8a5934951860db77a8614d73e61c2';    
-    const contract = web3.eth.contract(abi, address);
+	const contract = web3.eth.contract(abi, address);
     
