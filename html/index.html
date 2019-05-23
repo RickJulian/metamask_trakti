@@ -28,6 +28,7 @@
 <p id="account_balance"></p>
 <script src="../javascript/getAddressBalance.js"></script>
 
+
 <!-- Smart Contract interfacing section 
 <script src="../javascript/contract_data.js"></script>-->
 
@@ -36,10 +37,66 @@
 <script src="../javascript/getCommitteeMembers.js"></script>
 
 Insert address of new member</br>
-<input type='text' name="newmember_address" id="newmember"></input>
+<input type='text' id="newmember"></input>
 <button type='button' onclick="addMember()">Add new member</button>
 <p id="newmember_result"></p>
 <script src="../javascript/addMember.js"></script>
+
+Insert address of member to delete</br>
+<input type='text' id="deletemember"></input>
+<button type='button' onclick="deleteMember()">Delete member</button>
+<p id="deletemember_result"></p>
+<script src="../javascript/deleteMember.js"></script>
+
+<form id="petitionAskForm">
+    Amount:<br>
+    <input type="text" id="petitionAskForm_amount"><br>
+    Reason:<br>
+    <input type="text" id="petitionAskForm_reason"><br><br>
+    <input type="button" value="Submit" onclick="petitionAsk()">
+</form>
+<p id="petitionAskForm_result"></p>
+<script src="../javascript/petitionAsk.js"></script>
+
+Check petition by hash</br>
+<input type='text' id="petitionhash"></input>
+<button type='button' onclick="checkPetitionByHash()">Check</button>
+<p id="petitionhash_result"></p>
+<script src="../javascript/checkPetitionByHash.js"></script>
+
+<form id="petitionsHashPerPageForm">
+    Page:<br>
+    <input type="text" id="petitionsHashPerPage_page"><br>
+    Elements:<br>
+    <input type="text" id="petitionsHashPerPage_elements"><br><br>
+    <input type="button" value="Submit" onclick="viewPetitionsHashPerPage()">
+</form>
+<p id="petitionsHashPerPageForm_result"></p>
+<script src="../javascript/viewPetitionsHashPerPage.js"></script>
+
+<form id="checkPetition">
+    Petitioner (address):<br>
+    <input type="text" id="checkPetition_petitioner"><br>
+    Amount:<br>
+    <input type="text" id="checkPetition_amount"><br>
+    Reason:<br>
+    <input type="text" id="checkPetition_reason"><br><br>
+    <input type="button" value="Submit" onclick="checkPetition()">
+</form>
+<p id="checkPetitionForm_result"></p>
+<script src="../javascript/checkPetition.js"></script>
+
+Vote petition (hash):</br>
+<input type='text' id="votepetition"></input>
+<button type='button' onclick="votePetition()">Vote</button>
+<p id="votepetition_result"></p>
+<script src="../javascript/votePetition.js"></script>
+
+Get donation (hash):</br>
+<input type='text' id="getdonation"></input>
+<button type='button' onclick="getDonation()">Get</button>
+<p id="getdonation_result"></p>
+<script src="../javascript/getDonation.js"></script>
 
 </body>
 </html>
